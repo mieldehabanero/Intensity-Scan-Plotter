@@ -24,7 +24,6 @@ void IntensityScanMeasurements::Loop(){
         
         if (ientry < 0) break;
         nb = fChain->GetEntry(jentry);   nbytes += nb;
-        // if (Cut(ientry) < 0) continue;
     
         this->SelectQ50VsIntensity();
         this->SelectQtVsIntensity();
